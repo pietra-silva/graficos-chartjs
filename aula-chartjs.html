@@ -42,8 +42,8 @@
             },
             {
                 label: 'Umidade',
-                backgroundColor: 'rgb (0, 49, 83)',
-                borderColor: 'rgb(0 , 49, 83)',
+                backgroundColor: 'rgb(0, 49, 83)',
+                borderColor: 'rgb(0, 49, 83)',
                 data: [80, 82, 80, 85, 80, 83],
             }
             ]
@@ -62,47 +62,46 @@
             document.getElementById('myChart'),
             config
             );
-    </script>
 
-<!--GRAFICO 2-->
-    <script>
-        // DIMENSÕES
+
+    //GRAFICO
         const labels2 = [
-        'Janeiro',
-        'Fevereiro',
-        'Março',
-        'Abril',
-        'Maio',
-        'Junho',
+            'Janeiro',
+            'Fevereiro',
+            'Março',
+            'Abril',
+            'Maio',
+            'Junho'
         ];
 
-        // MÉTRICAS (DATASETS)
+
         const data2 = {
-        labels: labels2,
-        datasets: [{
-            label: 'Temperatura - Média',
+            labels: labels2,
+            datasets: [{
+            label: 'Temperatura Média',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [22, 24, 27, 23, 20, 18],
-        },
-        {
-            label: 'Umidade - Média',
-            backgroundColor: 'rgb (0, 49, 83)',
-            borderColor: 'rgb(0 , 49, 83)',
+            data: [22, 24, 27, 23, 20, 18, 45],
+            },
+            {
+            label: 'Umidade Média',
+            backgroundColor: 'rgb(0, 49, 83)',
+            borderColor: 'rgb(0, 49, 83)',
             data: [90, 89, 93, 87, 88, 82],
-        }
-        ]
+            }]
         };
-            const config2 = {
-            type: 'bar',
-            data: data,
-            options: {}
-            };
 
-            const myChart2 = new Chart(
+        const config2 = {
+            type: 'bar',
+            data: data2,
+            options: {}
+        };
+
+        const myChart2 = new Chart(
             document.getElementById('myChart2'),
             config2
-            );
+        );
+
     </script>
 </html>
 
